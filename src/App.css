@@ -1,0 +1,109 @@
+.erro {
+    color:red;
+}
+.sucesso{
+    color:green;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: black;
+    display: flex;
+    flex-direction:row;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:nowrap; 
+
+}
+
+img{
+    width: 70px; /* Define largura fixa */
+    height: auto;
+}
+a{
+    color: #1E6F5C;
+}
+
+a:hover{
+    color: #1E6F5C;
+}
+
+.card {
+    
+    background: white;
+    border-radius: 8px;
+    padding: 40px 36px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.campo {
+  padding: 8px;
+}
+
+/*input*/
+
+.form-group{
+     margin-bottom: 16px; 
+    }
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+    input:focus {
+      border-color: #4a90e2;
+    }
+
+    /* Borda vermelha quando há erro */
+    input.erro {
+      border-color: #e74c3c;
+    }
+
+
+input[type="email"],input[type="password"],input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+
+
+
+/* butao*/
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1E6F5C;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+}
+
+button:hover {
+  background-color: #155a4a;
+}
+
+
+
