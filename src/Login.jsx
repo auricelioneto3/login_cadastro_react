@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom'
 
 function Login() {
   // 1. Criamos dois estados: um para email, outro para senha
@@ -49,7 +50,7 @@ function Login() {
       </form>
 
       <footer>
-        <p>não possui uma conta? <a >cria uma conta</a></p>
+         <p>não possui uma conta? <Link to="/cadastro">cria uma conta</Link></p>
       </footer>
     </div>
   );

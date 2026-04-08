@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom'
 
 function Cadastro (){
     const [nome, setNome] = useState('')
@@ -15,11 +16,11 @@ function Cadastro (){
   }
     return(
         <>
-            <div class="card">
+            <div className="card">
                 <h1>Criar conta</h1>
                
                 <form onSubmit={handleSubmit}>
-                    <div class="form-group">
+                    <div className="form-group">
                         <label htmlFor="nome">Nome</label>
                         <input
                             type="text"
@@ -30,7 +31,7 @@ function Cadastro (){
                         
                     </div>
 
-                    <div class="form-group">
+                    <div className="form-group">
                         <label htmlFor="cpf">CPF</label>
                         <input
                             type="text"
@@ -41,7 +42,7 @@ function Cadastro (){
                         />
                     </div>
 
-                    <div class="form-group">
+                    <div className="form-group">
                         <label htmlFor="telefone">Telefone</label>
                         <input
                             type="text"
@@ -51,7 +52,7 @@ function Cadastro (){
                         />
                         
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                         <label htmlFor="email">Email</label>
                         <input
                             type="email"
@@ -62,7 +63,7 @@ function Cadastro (){
                         />
                     </div>
 
-                    <div class="form-group">
+                    <div className="form-group">
                         <label htmlFor="senha">Senha</label>
                         <input
                             type="password"
@@ -72,7 +73,7 @@ function Cadastro (){
                         />
                     </div>
 
-                    <div class="form-group">
+                    <div className="form-group">
                         <label htmlFor="confirmar">Confirmar senha</label>
                         <input
                             type="password"
@@ -87,7 +88,7 @@ function Cadastro (){
                     <div id="mensagem"></div>
                 </form>
                 <footer>
-
+                  <p>já tem conta? <Link to="/">entrar</Link></p>
                 </footer>
 
             </div>        
